@@ -54,7 +54,7 @@ if menu=="Explore Diamond's Features":
           st.pyplot(fig)
         
     st.header("Graphical Representation") 
-    graph=st.selectbox("Select a Graph",options=None+["Scatter Plot","Bar Graph","Histogram"]) 
+    graph=st.selectbox("Select a Graph",options=[None,"Scatter Plot","Bar Graph","Histogram"]) 
     if graph=="Scatter Plot":  
         value=st.slider("Filter Data Using Carat",0,6)
         data=data.loc[data["carat"]>=value]  
